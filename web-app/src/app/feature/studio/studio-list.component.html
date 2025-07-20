@@ -1,0 +1,19 @@
+<div id="studio">
+    <input type="text" name="search" placeholder="Search" ngModel >
+    <div class="studio__list">
+        <div class="studio__list__item" *ngFor="let studio of studioList" >
+            <img src="{{ studio.images[0] }}" alt="" width="300">
+            <div class="studio__list__item__content">
+                <h4>{{ studio.name }}</h4>
+                <h6>{{ studio.type }}</h6>
+                <h6>{{ studio.location }}</h6>
+            </div>
+            <div class="studio__list__item__meta">
+                <p>{{ studio.amenities }}</p>
+                <p>{{ studio.pricePerHour }}</p>
+                <p>{{ studio.rating }}</p>
+            </div>
+            <button class="button button__primary" (click)="bookStudio(studio.id)">Book Now</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'reset' as *;
+@use 'variable' as *;
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/font/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/font/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/font/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    max-width: 90rem;
+    color: $color__text__primary;
+    font-family: 'Poppins', sans-serif;
+    background-color: $color__secondary__light;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: normal;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: normal;
+}
+
+p {
+    font-size: 0.875rem;
+    line-height: normal;
+}
